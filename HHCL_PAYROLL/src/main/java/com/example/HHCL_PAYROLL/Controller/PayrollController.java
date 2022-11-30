@@ -30,5 +30,6 @@ public class PayrollController {
 	
 	@GetMapping(value = "/lateHoursReport", produces = "application/json")
 	public void generateLateHoursReport() throws SQLException {
+		payrollService.generateLateHoursReport();
 	}
 }
