@@ -219,8 +219,4 @@ public class PayrollService {
 			return new ResponseEntity<String>("EMPTY RESULT SET", HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
-	
-	public void generateLateHoursReport(){
-		
-	}
 }
