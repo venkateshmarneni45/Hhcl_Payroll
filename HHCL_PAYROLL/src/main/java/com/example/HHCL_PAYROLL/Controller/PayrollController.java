@@ -25,9 +25,4 @@ public class PayrollController {
 	public ResponseEntity<String> updateLeftEmployees() throws SQLException {
 		return payrollService.updateLeftEmployees();
 	}
-	
-	@GetMapping(value = "/lateHoursReport", produces = "application/json")
-	public void generateLateHoursReport() throws SQLException {
-		payrollService.generateLateHoursReport();
-	}
 }
